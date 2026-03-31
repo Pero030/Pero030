@@ -32,22 +32,25 @@ body {
 
 /* Profilbild */
 .profile {
-  width: 180px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+
+  /* dunkler Glas Look statt hartem Kasten */
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 
+    0 0 20px #00ffcc,
+    0 0 40px #ff00ff;
 }
 
 .profile img {
   width: 100%;
-  height: auto;
-  display: block;
-
-  /* wichtig: kein crop */
-  object-fit: contain;
-
-  /* neon glow passend zum style */
-  filter: 
-    drop-shadow(0 0 15px #00ffcc)
-    drop-shadow(0 0 30px #ff00ff);
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Name */
