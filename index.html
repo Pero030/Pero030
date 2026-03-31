@@ -20,13 +20,21 @@ body {
 
 h1 {
   color: #00ffcc;
-  font-size: 36px;
-  text-shadow: 0 0 15px #00ffcc;
+  font-size: 38px;
+  text-shadow: 0 0 20px #00ffcc;
 }
 
 p {
   opacity: 0.8;
   margin-bottom: 30px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #00ffcc;
 }
 
 .link {
@@ -45,7 +53,8 @@ p {
 .link:hover {
   background: #00ffcc;
   color: black;
-  box-shadow: 0 0 20px #00ffcc;
+  box-shadow: 0 0 25px #00ffcc;
+  transform: scale(1.05);
 }
 </style>
 </head>
@@ -53,12 +62,16 @@ p {
 <body>
 
 <div class="container">
+
+  <img class="profile" src="https://via.placeholder.com/100" alt="Profil">
+
   <h1>Pero030 🎤</h1>
   <p>Emotionaler Deutschrap</p>
 
   <a class="link" href="#">🎵 Spotify (bald)</a>
   <a class="link" href="#">🎬 YouTube</a>
   <a class="link" href="#">🎤 TikTok</a>
+
 </div>
 
 </body>
