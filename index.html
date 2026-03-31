@@ -9,13 +9,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: 
+
+  /* HINTERGRUND (GARANTIERT FUNKTIONIERT) */
+  background-image: 
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.85)),
-    url("Hintergrund.png");
+    url("./bg.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+
   color: white;
   text-align: center;
 }
@@ -44,6 +48,14 @@ h1 {
     0 0 20px #00ffcc,
     0 0 40px #00ffcc;
   margin-bottom: 10px;
+  animation: glow 2s infinite;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #00ffcc; }
+  50% { text-shadow: 0 0 30px #00ffcc; }
+  100% { text-shadow: 0 0 10px #00ffcc; }
 }
 
 /* Text */
@@ -68,23 +80,12 @@ p {
   font-weight: bold;
 }
 
-/* Hover Effekt */
+/* Hover */
 .link:hover {
   background: #00ffcc;
   color: black;
   box-shadow: 0 0 25px #00ffcc;
   transform: scale(1.07);
-}
-
-/* Kleine Animation */
-@keyframes glow {
-  0% { text-shadow: 0 0 10px #00ffcc; }
-  50% { text-shadow: 0 0 25px #00ffcc; }
-  100% { text-shadow: 0 0 10px #00ffcc; }
-}
-
-h1 {
-  animation: glow 2s infinite;
 }
 </style>
 </head>
@@ -93,13 +94,13 @@ h1 {
 
 <div class="container">
 
-  <!-- PROFILBILD -->
-  <img src="DEIN_LOGO.png" class="profile">
+  <!-- LOGO -->
+  <img src="Pero_logo_tik_you-removebg-preview.png" class="profile">
 
   <!-- NAME -->
   <h1>Pero030 🎤</h1>
 
-  <!-- BESCHREIBUNG -->
+  <!-- TEXT -->
   <p>Emotionaler Deutschrap</p>
 
   <!-- LINKS -->
