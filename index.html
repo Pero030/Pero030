@@ -10,7 +10,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 
-  /* HINTERGRUND (GARANTIERT FUNKTIONIERT) */
   background-image: 
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.85)),
     url("./Hintergrund.png");
@@ -18,7 +17,12 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   color: white;
   text-align: center;
@@ -26,54 +30,44 @@ body {
 
 /* Container */
 .container {
-  padding: 60px 20px;
   backdrop-filter: blur(6px);
+  padding: 40px 20px;
 }
 
-/* Profilbild */
+/* Logo */
 .profile {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 20px auto;
-  border-radius: 20px;
+  width: 180px;
+  margin: 0 auto 25px auto;
+  border-radius: 25px;
   overflow: hidden;
 
-  /* dunkler Glas Look statt hartem Kasten */
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
-
   box-shadow: 
-    0 0 20px #00ffcc,
-    0 0 40px #ff00ff;
+    0 0 30px #00ffcc,
+    0 0 60px #ff00ff;
 }
 
 .profile img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 /* Name */
 h1 {
+  font-size: 48px;
   color: #00ffcc;
-  font-size: 38px;
+
   text-shadow: 
     0 0 10px #00ffcc,
-    0 0 20px #00ffcc,
-    0 0 40px #00ffcc;
+    0 0 30px #00ffcc,
+    0 0 60px #00ffcc;
+
   margin-bottom: 10px;
-  animation: glow 2s infinite;
 }
 
-/* Glow Animation */
-@keyframes glow {
-  0% { text-shadow: 0 0 10px #00ffcc; }
-  50% { text-shadow: 0 0 30px #00ffcc; }
-  100% { text-shadow: 0 0 10px #00ffcc; }
-}
-
-/* Text */
+/* Beschreibung */
 p {
+  font-size: 18px;
   opacity: 0.85;
   margin-bottom: 30px;
 }
@@ -82,16 +76,19 @@ p {
 .link {
   display: block;
   margin: 15px auto;
-  padding: 15px;
-  max-width: 300px;
+  padding: 18px;
+  max-width: 350px;
+
   background: rgba(0, 0, 0, 0.6);
   color: #00ffcc;
   text-decoration: none;
   border-radius: 12px;
   border: 1px solid #00ffcc55;
+
   backdrop-filter: blur(8px);
   transition: 0.3s;
   font-weight: bold;
+  font-size: 18px;
 }
 
 /* Hover */
